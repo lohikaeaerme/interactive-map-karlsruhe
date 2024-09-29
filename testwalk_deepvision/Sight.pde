@@ -1,3 +1,5 @@
+import processing.sound.*;
+
 public class Sight{
   
   private int x;
@@ -8,14 +10,35 @@ public class Sight{
   private final int CIRCLE_SIZE = 100;
   private final int ANIMATION_DURATION  = 1000;
   private final float CIRCLE_DELAY = ANIMATION_DURATION / 3 * 0.8;
+  private SoundFile[] sounds;
   private int start = 0;
   
-  public Sight(int x,int y ,String fileName, String name){
+  public Sight(int x,int y ,String fileName, String name, SoundFile[] sounds){
     this.x = x;
     this.y = y;
     this.img = loadImage(fileName);
     this.img.resize(IMG_SIZE,IMG_SIZE);
     this.name = name;
+    this.sounds = sounds;
+    
+  }
+  
+  private void playSound(){
+    int rand = (int) (Math.random() * sounds.length);
+    
+    for (SoundFile sound : sounds){
+      try{
+        sound.stop();
+      }catch (Exception e){
+        
+      }
+    }
+    try{
+      sounds[rand].cue(0);
+      sounds[rand].play();
+    }catch (Exception e){
+        
+    }
   }
   
  public void drawSight(float minDist){
@@ -25,6 +48,7 @@ public class Sight{
      
      if(start == 0){
        start = millis();
+       playSound();
      }
      if(millis() - start < ANIMATION_DURATION){
        PImage scaledImg = this.img.copy();
