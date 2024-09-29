@@ -1,2 +1,10 @@
 hold_applications/testwalk_deepvision filter=lfs diff=lfs merge=lfs -text
 hold_applications/testwalk_mouse filter=lfs diff=lfs merge=lfs -text
+hold_applications/testwalk_mouse/macos-aarch64.zip filter=lfs diff=lfs merge=lfs -text
+hold_applications/testwalk_mouse/macos-x86_64.zip filter=lfs diff=lfs merge=lfs -text
+hold_applications/testwalk_mouse/windows-amd64.zip filter=lfs diff=lfs merge=lfs -text
+hold_applications/testwalk_deepvision/linux-amd64.zip filter=lfs diff=lfs merge=lfs -text
+hold_applications/testwalk_deepvision/macos-aarch64.zip filter=lfs diff=lfs merge=lfs -text
+hold_applications/testwalk_deepvision/macos-x86_64.zip filter=lfs diff=lfs merge=lfs -text
+hold_applications/testwalk_deepvision/windows-amd64.zip filter=lfs diff=lfs merge=lfs -text
+hold_applications/testwalk_mouse/linux-amd64.zip filter=lfs diff=lfs merge=lfs -text
