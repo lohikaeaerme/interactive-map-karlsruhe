@@ -2,7 +2,7 @@
 Repository for an interactive map of Karlsruhe in the context of a project during master studies in computer scienc on University of Applied Sciences Karlsruhe. 
 
 ## Demonstration of the interactive map
-In this video you can see the full experience of the interactive map and the augmented reality interface with which the unser interacts.
+In this video you can see the full experience of the interactive map and the augmented reality interface with which the unser interacts. If you having trouble plying the video try it on a mobile device or with google chrome browser.
 
 
 https://github.com/user-attachments/assets/2a0301a1-6733-4d22-8988-c425ee982512
